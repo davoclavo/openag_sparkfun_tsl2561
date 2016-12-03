@@ -1,0 +1,16 @@
+{
+    "name": "openag_sparkfun_tsl2561",
+    "keywords": "openag, tsl2561",
+    "description": "OpenAg driver for the TSL2561 light illuminance sensor breakout board by Sparkfun",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/davoclavo/openag_sparkfun_tsl2561.git"
+    },
+    "frameworks": "arduino",
+    "platforms": "*",
+    "dependencies": [
+        {
+            "name": "openag_module"
+        }
+    ]
+}

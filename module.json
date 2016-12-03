@@ -1,0 +1,34 @@
+{
+    "header_file": "openag_sparkfun_tsl2561.h",
+    "class_name": "SparkfunTSL2561",
+    "arguments": [
+        {
+            "name": "i2c_address",
+            "type": "int",
+            "default": 57
+        }
+    ],
+    "inputs": {
+        "gain": {
+            "type": "std_msgs/Bool",
+            "categories": ["calibration"]
+        },
+        "time_setting": {
+            "type": "std_msgs/Int32",
+            "categories": ["calibration"]
+        },
+        "integration_time": {
+            "type": "std_msgs/Int32",
+            "categories": ["calibration"]
+        }
+    },
+    "outputs": {
+        "light_illuminance": {
+            "type": "std_msgs/Float32"
+        }
+    },
+    "dependencies": [
+        {"type": "git", "url": "https://github.com/OpenAgInitiative/openag_firmware_module.git"},
+        {"type": "git", "url": "https://github.com/sparkfun/SparkFun_TSL2561_Arduino_Library"}
+    ]
+}
